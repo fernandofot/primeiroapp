@@ -2,8 +2,8 @@
   angular.module('primeiraApp').controller('BillingCycleCtrl', [
     '$http',
     '$location',
-    'msgs'
-    'tabs'
+    'msgs',
+    'tabs',
     BillingCycleController
   ])
 
