@@ -9,7 +9,6 @@
       tabUpdate = false,
       tabDelete = false,
     }) {
-
       owner.tabList = tabList
       owner.tabCreate = tabCreate
       owner.tabUpdate = tabUpdate
