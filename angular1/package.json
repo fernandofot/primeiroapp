@@ -32,7 +32,8 @@
     "run-sequence": "2.0.0"
   },
   "dependencies": {
+    "angular-route": "^1.6.7",
     "angular-ui-router": "1.0.3",
-    "angular-route": "^1.6.7"
+    "newrelic": "^2.4.2"
   }
 }

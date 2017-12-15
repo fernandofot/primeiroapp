@@ -1,4 +1,4 @@
-const gulp = require ('gulp')
+const gulp = require('gulp')
 const watch = require('gulp-watch')
 const webserver = require('gulp-webserver')
 
@@ -6,7 +6,7 @@ gulp.task('watch', () => {
   watch('app/**/*.html', () => gulp.start('app.html'))
   watch('app/**/*.css', () => gulp.start('app.css'))
   watch('app/**/*.js', () => gulp.start('app.js'))
-  watch('app/**/*.*', () => gulp.start('app.assets'))
+  watch('assets/**/*.*', () => gulp.start('app.assets'))
 })
 
 gulp.task('server', ['watch'], () => {
@@ -14,5 +14,5 @@ gulp.task('server', ['watch'], () => {
     livereload: true,
     port: 3000,
     open: true
-  }))  
+  }))
 })

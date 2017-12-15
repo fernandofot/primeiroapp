@@ -1,7 +1,5 @@
 const _ = require('lodash')
 const BillingCycle = require('./billingCycle')
-const billingSummaryService = require('../billingSummary/billingSummaryService')
-//const mongooseMid = require('../middleware/forMongoose')
 
 BillingCycle.methods(['get', 'post', 'put', 'delete'])
 BillingCycle.updateOptions({new: true, runValidators: true})
@@ -12,7 +10,7 @@ function sendErrorsOrNext(req, res, next) {
   const bundle = res.locals.bundle
 
   if(bundle.errors) {
-    const errors = parseErrors(bundle.errors)
+    var errors = parseErrors(bundle.errors)
     res.status(500).json({errors})
   } else {
     next()
